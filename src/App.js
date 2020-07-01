@@ -17,8 +17,7 @@ function App() {
         url: "https://github.com/eliakimnobre/desafio03-conceitos-reactjs",
         techs: ["NodeJS", "ReactJS", "PHP"]
       });
-    const repository = response.data;
-    setRepositories([...repositories, repository])
+    setRepositories([...repositories, response.data])
   }
 
   async function handleRemoveRepository(id) {
